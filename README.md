@@ -1,5 +1,7 @@
 # Project-GeographFun
 This project's goal is to educate children about geography in a fun and interactive way!
+It won the in-class popular vote for Best UI/UX (User Interface/User Experience).
+I did all the front-end coding and layout design and some back-end work.
 
 ### Overview
 
