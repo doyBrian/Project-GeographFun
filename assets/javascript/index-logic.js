@@ -1,11 +1,11 @@
 //Initialize Firebase
 var config = {
-    apiKey: "AIzaSyBvUT-jpC4knutoC3105OoxGyPmwPruf0I",
-    authDomain: "project1-616bd.firebaseapp.com",
-    databaseURL: "https://project1-616bd.firebaseio.com",
-    projectId: "project1-616bd",
-    storageBucket: "project1-616bd.appspot.com",
-    messagingSenderId: "39559179000"
+    apiKey: "AIzaSyD1eVlZJkk53xp0qdph7FvHZNhFDLtQOwU",
+    authDomain: "classacitivity.firebaseapp.com",
+    databaseURL: "https://classacitivity.firebaseio.com",
+    projectId: "classacitivity",
+    storageBucket: "classacitivity.appspot.com",
+    messagingSenderId: "978114446376"
 };
 firebase.initializeApp(config);
 localStorage.clear();
@@ -125,7 +125,7 @@ $("#anychart-embed-ZgsIrI7P").dblclick(function () {
 
         // ------------- WEATHER API CALL------------- 
         let locationOfInterest = (countryCapitalName.replace(" ", "+") + "," + countryName.replace(" ", "+"));
-        var weatherQueryURL = "https://api.worldweatheronline.com/premium/v1/weather.ashx?format=json&key=07446752c7d0497b977214242190803&q=" + locationOfInterest;
+        var weatherQueryURL = "https://api.worldweatheronline.com/premium/v1/weather.ashx?format=json&key=5875b1e6dd02408199f45600190905&q=" + locationOfInterest;
         $.ajax({
             url: weatherQueryURL,
             method: "GET"
@@ -153,7 +153,7 @@ $("#anychart-embed-ZgsIrI7P").dblclick(function () {
             localStorage.setItem("strForecastWeather6days", strForecastWeather6days);
 
             // ------------- TIME API CALL ------------- 
-            var timeQueryURL = "https://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key=07446752c7d0497b977214242190803&q=" + locationOfInterest;
+            var timeQueryURL = "https://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key=5875b1e6dd02408199f45600190905&q=" + locationOfInterest;
             $.ajax({
                 url: timeQueryURL,
                 method: "GET"
