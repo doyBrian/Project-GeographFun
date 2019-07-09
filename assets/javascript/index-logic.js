@@ -125,7 +125,7 @@ $("#anychart-embed-ZgsIrI7P").dblclick(function () {
 
         // ------------- WEATHER API CALL------------- 
         let locationOfInterest = (countryCapitalName.replace(" ", "+") + "," + countryName.replace(" ", "+"));
-        var weatherQueryURL = "https://api.worldweatheronline.com/premium/v1/weather.ashx?format=json&key=5875b1e6dd02408199f45600190905&q=" + locationOfInterest;
+        var weatherQueryURL = "https://api.worldweatheronline.com/premium/v1/weather.ashx?format=json&key=82bb362ff3a04682890232101190907&q=" + locationOfInterest;
         $.ajax({
             url: weatherQueryURL,
             method: "GET"
@@ -153,7 +153,7 @@ $("#anychart-embed-ZgsIrI7P").dblclick(function () {
             localStorage.setItem("strForecastWeather6days", strForecastWeather6days);
 
             // ------------- TIME API CALL ------------- 
-            var timeQueryURL = "https://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key=5875b1e6dd02408199f45600190905&q=" + locationOfInterest;
+            var timeQueryURL = "https://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key=82bb362ff3a04682890232101190907&q=" + locationOfInterest;
             $.ajax({
                 url: timeQueryURL,
                 method: "GET"
